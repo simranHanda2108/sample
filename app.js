@@ -1,7 +1,7 @@
 var restify = require('restify');var builder = require('botbuilder');var fs=require('fs');var util = require('util');var request = require('sync-request');
 
 
-var connector = new builder.ChatConnector({    appId: '',    appPassword: ''});var bot = new builder.UniversalBot(connector);
+var connector = new builder.ChatConnector({    appId: '43d98160-4367-43fd-b573-55b9c87e1521',    appPassword: '1aiDx2Tn6f9V1ovG1KRTdse'});var bot = new builder.UniversalBot(connector);
 var server = restify.createServer();server.listen(process.env.port || process.env.PORT || 3978,'localhost', function () {   console.log('%s listening to %s', server.name, server.url); });server.use(restify.acceptParser(server.acceptable));server.use(restify.jsonp());server.use(restify.bodyParser({ mapParams: false }));server.post('/api/messages', connector.listen());
 
 

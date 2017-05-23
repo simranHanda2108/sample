@@ -1,19 +1,22 @@
 {
-  "name": "NodejsWebApp1",
+  "name": "nodejswebapp",
   "private": true,
   "version": "0.0.0",
   "description": "NodejsWebApp1",
   "main": "server.js",
-  "author": {
-    "name": "ctsodev1",
-    "email": ""
-  },
+  "author": "ctsodev1",
   "dependencies": {
-    "express": "^4.13.3"
+    "botbuilder": "^3.8.3",
+    "express": "^4.13.3",
+    "restify": "^4.3.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-zip": "^3.0.2",
     "minimist": "^1.2.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC"
 }
